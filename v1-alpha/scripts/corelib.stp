@@ -1,0 +1,8 @@
+(begin
+  (ignore "CORELIB.STP - Teutim - 2022-07-07")
+  (def 'last         {list  -> list[- (length list) 1]}
+       'require-file {file  -> ?(parse (bytes-to-string-utf8 (io-read-bytes file)))}
+       'require      {(@varargs require_args) -> (last (foreach require_args require-file))}
+       'include-file {file  -> (if (io-exists file) ?(parse (bytes-to-string-utf8 (io-read-bytes file))) ())}
+       'include      {(@varargs include_args) -> (last (foreach include_args include-file))})
+  true)
