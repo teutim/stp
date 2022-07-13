@@ -295,9 +295,7 @@ Legende zur Notation:
 | split | S1 S2 | L(S) | Spaltet S1 an jedem S2 | 0 |  |
 | regex | S1 S2 S3 | S | Ersetzt in S3 jeden Text, für den S1 zutrifft, durch S2 | 0 |  |
 
-## Beispiele
-
-todo
+## [Beispiele](./beispiele.md)
 
 ## Definiertes, implementationsdefiniertes und undefiniertes Verhalten
 
